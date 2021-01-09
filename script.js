@@ -1,6 +1,5 @@
 function compute()
 {
-    p = document.getElementById("principal").value;
-    
+    principal = document.getElementById("principal").value;
 }
         
