@@ -1,4 +1,76 @@
-body {background-color:tan;}
-h1{color:green;}
+body    {
+        background-color:black;
+        font-family: "helvetica";
+        text-align: center;
+}
 
+#div1   {
+        border-radius: 25px;
+        height: 90%;
+        width: 90%;
+        margin: 0 auto;
+        background-color: white;
+        text-align: center;
+}
+
+
+form    {
+        left:50%;
+        text-align: left;
+        width: 300px;
+        display: inline-block;
+        position: fixed;   
+        transform: translate(-50%, 0);
+        
+}
+
+
+.div_container  {
+        margin-bottom: 10px;
+}
+
+label {
+        display: inline-block;
+        width: 100px;
+        font-weight: 500;
+}
+
+#dynamic_label {
+        display: inline;
+        margin-left: 5px;
+}
+
+footer {
+    text-align: left;
+    width: 80%;
+    left: 10%;
+    top: 78%;
+    right: 0;
+    padding: 1 rem;
+    font-size: 15px;
+    position: absolute;
+}
+
+p {
+        font-weight: 500;
+        display: block;
+        position: absolute;
+}
+
+#p1 {
+
+        font-weight: 500;
+        display: block;
+        max-width: 50%;
+}
+
+
+h1      {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        padding-top: 35px;
+        text-align: center;
+        margin-top: 10px;
+        color:grey;        
+}
 
