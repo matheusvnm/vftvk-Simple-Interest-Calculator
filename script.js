@@ -15,7 +15,7 @@ function compute()
 {
     var form = document.getElementById("form1")
 
-    for (i = 0; i < form.childElementCount; i++){
+    for (i = 1; i < form.childElementCount; i++){
         if (form.children[i].tagName == ("P")){
             form.removeChild(form.children[i]);
         }
@@ -26,12 +26,22 @@ function compute()
     var years = document.getElementById("years").value;
 
     
-    if (amount == "" || rate == "" || years == ""){
-        alert("Please fill out all the fields.");
+    if (amount == ""){
+        alert("Please fill the ammount field.");
+        document.getElementById("amount").focus();
         return false;
+    } else if (parseInt(amount) <= 0) {
+        alert("Please fill out the ammount field with a number higher than zero.");
+        document.getElementById("amount").focus();
+        return false;
+    } else if (parseInt(rate) == 0) {
+        alert("Please fill out the rate field with a number higher than zero.");
+        document.getElementById("rate").focus();
+        return false;
+
     }
 
-    var result = parseInt(amount)*((1+(parseFloat(rate)/100))**parseInt(years));
+    var result = parseInt(amount)*(parseFloat(rate)/100)*parseInt(years);
     var actualDate = new Date();
     var futureDate = parseInt(actualDate.getFullYear()) + parseInt(years);
 

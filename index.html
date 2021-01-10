@@ -1,5 +1,6 @@
 <html>
     <head>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
@@ -10,10 +11,10 @@
            
 
                 <div class="div_container"><label for="amount">Amount</label> 
-                <input class="field" type="number" min="0" id="amount"> </div>
+                <input class="field" type="number" min="0" id="amount" required> </div>
 
                 <div class="div_container" id="div_slider"><label for="rate" id="label_rate">Interest Rate</label>
-                <input class="field" type="range" min="0.1" max="100" value="10" step="0.5" id="rate" oninput="computePercentage()"></div>
+                <input class="field" type="range" min="0" max="100" value="10" step="0.5" id="rate" oninput="computePercentage()"></div>
 
                 <div class="div_container"><label for="years">No. of Years</label>
                 <select class="field" id="years"></select> </div>
